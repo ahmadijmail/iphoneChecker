@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/iphonechecker/static/css/main.f7ef80c2.css",
+    "main.js": "/iphonechecker/static/js/main.882abf6a.js",
+    "index.html": "/iphonechecker/index.html",
+    "main.f7ef80c2.css.map": "/iphonechecker/static/css/main.f7ef80c2.css.map",
+    "main.882abf6a.js.map": "/iphonechecker/static/js/main.882abf6a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f7ef80c2.css",
+    "static/js/main.882abf6a.js"
+  ]
+}
