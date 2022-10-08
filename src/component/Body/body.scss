@@ -143,7 +143,7 @@ $fontAsap: 'Asap', sans-serif;
 
 
 body {
-	background-image: linear-gradient(45deg, #7175da, #9790F2);
+	background-image: linear-gradient(45deg, #a1a4f6, #b1acee);
 	font-family: 'Muli', sans-serif;
 	display: flex;
 	align-items: center;
@@ -500,3 +500,8 @@ letter-spacing: 1px;
 }
 
 
+.error{
+	color: pink;
+	margin-left: 25%;
+	
+}

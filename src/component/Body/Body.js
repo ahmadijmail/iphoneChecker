@@ -22,12 +22,24 @@ const Body = () => {
           },
         })
         .then((res) => {
-          setresult({ response: res.data });
-          setserviceID(res.config.params.service);
-          console.log("API Response", res);
+          
+
+          if(res.data.error){
+            console.log("errorrss", res);
+            setresult({error:res.data.error })
+          }else {
+
+            setresult({ response: res.data });
+            console.log(res.data ,"sfsfsf");
+            setserviceID(res.config.params.service);
+            console.log("API Response", res);
+
+          }
+         
         })
         .catch((error) => {
-          setresult(error);
+         
+          console.log(error, "errorr");
         });
     };
   return (
@@ -72,8 +84,10 @@ const Body = () => {
           submit
         </button>
       </div>
+{result? <span className="error">{result.error} </span>:""}
 
-      {serviceid == 4 ? (
+
+      {serviceid == 4 && result.response? (
         <div>
           <div className="courses-container">
             <div className="course">
@@ -102,7 +116,7 @@ const Body = () => {
         ""
       )}
 
-      {serviceid == 205 ? (
+      {serviceid == 205 && result.response? (
         <div className="courses-container">
           <div className="course">
             <div className="course-preview">
