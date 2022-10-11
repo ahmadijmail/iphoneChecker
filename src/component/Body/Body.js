@@ -30,7 +30,7 @@ const Body = () => {
           }else {
 
             setresult({ response: res.data });
-            console.log(res.data ,"sfsfsf");
+            
             setserviceID(res.config.params.service);
             console.log("API Response", res);
 
@@ -84,7 +84,7 @@ const Body = () => {
           submit
         </button>
       </div>
-{result? <span className="error">{result.error} </span>:""}
+{result?.error? <span className="error">{result.error} </span>:""}
 
 
       {serviceid == 4 && result.response? (
